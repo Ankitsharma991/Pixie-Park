@@ -18,7 +18,7 @@ function Header() {
           <img src="/images/watchlist-icon.svg" alt="" />
           <span>WATCHLIST</span>
         </a>
-        
+
         <a href="/">
           <img src="/images/original-icon.svg" alt="" />
           <span>ORIGINALS</span>
@@ -32,6 +32,7 @@ function Header() {
           <span>SERIES</span>
         </a>
       </NavMenu>
+      <UserImage src="/images/img1.jpg" />
     </Nav>
   );
 }
@@ -51,11 +52,15 @@ const Logo = styled.img`
 `;
 
 const NavMenu = styled.div`
+  flex: 1;
   display: flex;
+  margin-left: 25px;
   a {
     display: flex;
     align-items: center;
     padding: 0 12px;
+    text-decoration: none;
+    cursor: pointer;
     img {
       height: 20px;
     }
@@ -65,4 +70,11 @@ const NavMenu = styled.div`
     font-size: 13px;
     letter-spacing: 1.42px;
   }
+`;
+
+const UserImage = styled.img`
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  cursor: pointer;
 `;
