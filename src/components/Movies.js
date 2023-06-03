@@ -11,6 +11,15 @@ function Movies() {
     <Container>
       <h4>Recommended for You</h4>
       <Content>
+        {movies &&
+          movies.map((movie) => (
+            <Wrap>
+              <img
+                src={movie.cardImg}
+                alt=""
+              />
+            </Wrap>
+          ))}
         <Wrap>
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_L3FkG0ZTjAgy5IIU3pAocTYSJU6N1spEYv91jHSzNB4PcOl6Z905mkoroGWuI91DN1k&usqp=CAU"

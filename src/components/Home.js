@@ -18,7 +18,7 @@ function Home() {
       console.log(tempMovies);
       dispatch(setMovies(tempMovies));
     });
-  }, []);
+  });
 
   return (
     <Container>
