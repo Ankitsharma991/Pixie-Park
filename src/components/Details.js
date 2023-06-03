@@ -68,14 +68,15 @@ const Background = styled.div`
 
 const ImageTitle = styled.div`
   height: 30vh;
-  width: 35vw;
   min-height: 170px;
-  margin-top: 60px; 
+  width: 35vw;
   min-width: 200px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+
   img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
   }
 `;
 
@@ -87,7 +88,7 @@ const Controls = styled.div`
 const PlayButton = styled.button`
   border-radius: 4px;
   font-size: 15px;
-  padding: 8px 24px;
+  padding: 0px 24px;
   display: flex;
   margin-right: 22px;
   align-items: center;
