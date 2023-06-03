@@ -7,7 +7,7 @@ const firebaseConfig = {
   storageBucket: "pixie-park.appspot.com",
   messagingSenderId: "452270770605",
   appId: "1:452270770605:web:6907690a95254e0ab6f924",
-  measurementId: "G-2TJ1KJJPF6"
+  measurementId: "G-2TJ1KJJPF6",
 };
 
 const firebaseApp = firebase.initializeApp(firebaseConfig);
